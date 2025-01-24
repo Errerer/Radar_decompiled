@@ -1,5 +1,5 @@
 using Lumina.Excel;
-using Lumina.Excel.Sheets;
+using Lumina.Excel.GeneratedSheets2;
 using System;
 using System.Collections.Generic;
 using System.Linq;

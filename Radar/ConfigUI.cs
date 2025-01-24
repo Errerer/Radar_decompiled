@@ -3,7 +3,7 @@ using Dalamud.Interface.Utility.Raii;
 using Dalamud.Interface.Windowing;
 using ImGuiNET;
 using Lumina.Excel;
-using Lumina.Excel.Sheets;
+using Lumina.Excel.GeneratedSheets2;
 using Radar.CustomObject;
 using Radar.Utils;
 using System;
@@ -62,7 +62,7 @@ public class ConfigUi : Window, IDisposable
         {
             if (territoryIdToBg == null)
             {
-                territoryIdToBg = TerritoryTypeSheet.ToDictionary((i) => (ushort)i.RowId, (j) => j.Bg.ExtractText());
+                territoryIdToBg = TerritoryTypeSheet.ToDictionary((i) => (ushort)i.RowId, (j) => j.Bg.RawString);
                 territoryIdToBg[0] = "未记录区域（数据不可用）";
             }
             return territoryIdToBg;

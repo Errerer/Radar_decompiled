@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DalamudPackager" Version="11.0.0" />
+    <PackageReference Include="DalamudPackager" Version="2.1.13" />
   </ItemGroup>
 
   <PropertyGroup>
@@ -16,9 +16,9 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <Authors>akira0245, KirisameVanilla</Authors>
     <Version>2.1.0.1</Version>
-    <DalamudLibPath Condition=" '$(Configuration)' == 'SE'">$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+    <DalamudLibPath Condition=" '$(Configuration)' == 'SE'">$(appdata)\XIVLaunchercn\addon\Hooks\dev\</DalamudLibPath>
     <DalamudLibPath Condition=" '$(Configuration)' == 'SQ'">$(appdata)\XIVLauncherCN\addon\Hooks\dev\</DalamudLibPath>
-    <DalamudLibPath Condition=" '$(Configuration)' == 'Debug'">$(appdata)\XIVLauncher\addon\Hooks\dev\</DalamudLibPath>
+    <DalamudLibPath Condition=" '$(Configuration)' == 'Debug'">$(appdata)\XIVLaunchercn\addon\Hooks\dev\</DalamudLibPath>
     <RepositoryUrl>https://github.com/KirisameVanilla/Radar</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/KirisameVanilla/Radar</PackageProjectUrl>

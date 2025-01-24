@@ -21,9 +21,9 @@ using System.IO;
 using System.Linq;
 using System.Numerics;
 using static Radar.RadarEnum;
-using Map = Lumina.Excel.Sheets.Map;
+using Map = Lumina.Excel.GeneratedSheets2.Map;
 using ObjectKind = Dalamud.Game.ClientState.Objects.Enums.ObjectKind;
-using TerritoryType = Lumina.Excel.Sheets.TerritoryType;
+using TerritoryType = Lumina.Excel.GeneratedSheets2.TerritoryType;
 using Vector2 = System.Numerics.Vector2;
 using Vector3 = System.Numerics.Vector3;
 using Vector4 = System.Numerics.Vector4;
@@ -752,7 +752,7 @@ public class Radar : IDisposable
 
         Map map = MapSheet.GetRow(Plugin.ClientState.MapId);
 
-        var rawString = map.Id.ExtractText();
+        var rawString = map.Id.RawString;
         string texturePath = "ui/map/" + rawString + "/" + rawString?.Replace("_", string.Empty).Replace("/", string.Empty) + "_m.tex";
         ISharedImmediateTexture fromGame = Plugin.TextureProvider.GetFromGame(texturePath);
         textureWrap = fromGame.GetWrapOrDefault();
